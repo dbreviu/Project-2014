@@ -18,16 +18,13 @@ public partial class _Default : System.Web.UI.Page
         {
             i = 0;
         }
-        else
-        {
-         i++;   
-        }
+       
         
     }
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-
+       
         txtBoxInput.Text = whoRules(i++) +" Rules!" + i;
     }
 
