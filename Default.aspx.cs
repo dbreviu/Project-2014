@@ -9,14 +9,20 @@ using System.Web.UI.WebControls;
 public partial class _Default : System.Web.UI.Page
 {
 
-    private int i = 0;  
+    private int i;  
     String[] ppl = { "Cassie", "Joanne", "Robert" };
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Page.IsPostBack) {
-            i++;
+        if (!Page.IsPostBack) 
+        {
+            i = 0;
         }
+        else
+        {
+         i++;   
+        }
+        
     }
 
     protected void Button1_Click(object sender, EventArgs e)
