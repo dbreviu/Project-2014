@@ -24,8 +24,8 @@ public partial class _Default : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-       
-        txtBoxInput.Text = whoRules(i++) +" Rules!" + i;
+        i++;
+        txtBoxInput.Text = whoRules(i) +" Rules!";
     }
 
     public String whoRules(int i) 
